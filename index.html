@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Genius</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="px-10 flex flex-col lg:flex-row gap-4">
+        <section class="lg:w-9/12">
+            <section class="flex flex-col lg:flex-row gap-4 mt-6">
+                <!-- triangle start-->
+                    <div class="card card-compact w-96 bg-base-200 shadow-xl text-center p-2">
+                        <img src="./images/triangle.png" alt="Shoes">
+                        <div class="card-body">
+                          <h2 class="card-title mx-auto font-bold">Triangle</h2>
+                          <p>Area (A) = 0.5 ✕ b ✕ h</p>
+                          <p>
+                            <input type="text" name="" placeholder="base" id="triangleInputBase" class="outline-none bg-slate-200 p-1 w-20"> <span>cm</span>
+    
+                            <input type="text" name="" placeholder="hight" id="triangleInputHight" class="outline-none bg-slate-200 p-1 w-20 ml-4"> <span>cm</span>
+                          </p>
+                          <p class="text-xl font-bold text-left ml-14">Result : <span id="triangleResult">0</span> cm</p>
+                          <div class="card-actions justify-center">
+                            <button id="triangleBtn" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- triangle end -->
+    
+                <!-- rectangle start-->
+                    <div class="card card-compact w-96 bg-base-200 shadow-xl text-center p-2">
+                        <img src="./images/rectangle.png" alt="Shoes">
+                        <div class="card-body">
+                          <h2 class="card-title mx-auto font-bold">Rectangle</h2>
+                          <p>Area (A) = w ✕ l</p>
+                          <p>
+                            <input type="text" name="" placeholder="width" id="rectangleInputWidth" class="outline-none bg-slate-200 p-1 w-20"> <span>cm</span>
+    
+                            <input type="text" name="" placeholder="length" id="rectangleInputHight" class="outline-none bg-slate-200 p-1 w-20 ml-4"> <span>cm</span>
+                          </p>
+                          <p class="text-xl font-bold text-left ml-14">Result : <span id="rectangleResult">0</span> cm</p>
+                          <div class="card-actions justify-center">
+                            <button id="rectangleBtn" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- rectangle end -->
+    
+                <!-- parallelogram start-->
+                    <div class="card card-compact w-96 bg-base-200 shadow-xl text-center p-2">
+                        <img src="./images/parallelogram.png" alt="Shoes">
+                        <div class="card-body">
+                          <h2 class="card-title mx-auto font-bold">Parallelogram</h2>
+                          <p>Area (A) = b ✕ h</p>
+                          <p>
+                            <input type="text" name="" placeholder="base" id="parallelogramInputBase" class="outline-none bg-slate-200 p-1 w-20"> <span>cm</span>
+    
+                            <input type="text" name="" placeholder="hight" id="parallelogramInputHight" class="outline-none bg-slate-200 p-1 w-20 ml-4"> <span>cm</span>
+                          </p>
+                          <p class="text-xl font-bold text-left ml-14">Result : <span id="parallelogramResult">0</span> cm</p>
+                          <div class="card-actions justify-center">
+                            <button id="parallelogramBtn" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- parallelogram end -->
+            </section>
+    
+            <section class="flex flex-col lg:flex-row gap-4 mt-6">
+                <!-- rhombus start-->
+                <div class="card card-compact w-96 bg-base-200 shadow-xl text-center p-2">
+                    <img src="./images/rhombus.png" alt="Shoes">
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto font-bold">Parallelogram</h2>
+                      <p>Area (A) = 0.5 ✕ d <sub>1</sub> ✕ d <sub>2</sub></p>
+                      <p>
+                        <input type="text" name="" placeholder="base" id="rhombusInputBase" class="outline-none bg-slate-200 p-1 w-20"> <span>cm</span>
+    
+                        <input type="text" name="" placeholder="hight" id="rhombusInputHight" class="outline-none bg-slate-200 p-1 w-20 ml-4"> <span>cm</span>
+                      </p>
+                      <p class="text-xl font-bold text-left ml-14">Result : <span id="rhombusResult">0</span> cm</p>
+                      <div class="card-actions justify-center">
+                        <button id="rhombusBtn" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            <!-- rhombus end -->
+    
+            <!-- pentagon start-->
+                <div class="card card-compact w-96 bg-base-200 shadow-xl text-center p-2">
+                    <img src="./images/pentagon.png" alt="Shoes">
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto font-bold">Pentagon</h2>
+                      <p>Area (A) = 0.5 ✕ p ✕ b</p>
+                      <p>
+                        <input type="text" name="" placeholder="base" id="pentagonInputBase" class="outline-none bg-slate-200 p-1 w-20"> <span>cm</span>
+    
+                        <input type="text" name="" placeholder="hight" id="pentagonInputHight" class="outline-none bg-slate-200 p-1 w-20 ml-4"> <span>cm</span>
+                      </p>
+                      <p class="text-xl font-bold text-left ml-14">Result : <span id="pentagonResult">0</span> cm</p>
+                      <div class="card-actions justify-center">
+                        <button id="pentagonBtn" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            <!-- pentagon end -->
+    
+            <!-- ellipse start-->
+                <div class="card card-compact w-96 bg-base-200 shadow-xl text-center p-2">
+                    <img src="./images/ellipse.png" alt="Shoes">
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto font-bold">Ellipse</h2>
+                      <p>Area (A) = πab</p>
+                      <p>
+                        <input type="text" name="" placeholder="base" id="ellipseInputBase" class="outline-none bg-slate-200 p-1 w-20"> <span>cm</span>
+    
+                        <input type="text" name="" placeholder="hight" id="ellipseInputHight" class="outline-none bg-slate-200 p-1 w-20 ml-4"> <span>cm</span>
+                      </p>
+                      <p class="text-xl font-bold text-left ml-14">Result : <span id="ellipseResult">0</span> cm</p>
+                      <div class="card-actions justify-center">
+                        <button id="ellipseBtn" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            <!-- ellipse end -->
+            </section>
+        </section>
+        <section class="lg:w-3/12 h-80 overflow-y-auto text-center mt-6 border-2 border-black px-2 rounded-2xl">
+            <h1 class="text-2xl font-bold">CALCULATE</h1>
+            <div class="bg-black w-36 h-[2px] mx-auto mb-6"></div>
+            <div id="area-calculator" class="text-left font-semibold"></div>
+        </section>
+    </header>
+    <script src="geometry.js"></script>
+</body>
+</html>
