@@ -34,6 +34,11 @@ document.getElementById('triangleInputHight').addEventListener('keyup', function
         enterTryangleHit()
     }
 })
+document.getElementById('triangleInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'Enter'){
+        enterTryangleHit()
+    }
+})
 
 //------------------------------------rectangle calculate-------------------------------------//
 
@@ -55,6 +60,11 @@ function enterRectangleHit(){
 document.getElementById('rectangleBtn').addEventListener('click', enterRectangleHit)
 
 document.getElementById('rectangleInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'Enter'){
+        enterRectangleHit()
+    }
+})
+document.getElementById('rectangleInputWidth').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterRectangleHit()
     }
@@ -85,6 +95,11 @@ document.getElementById('parallelogramInputHight').addEventListener('keyup', fun
         enterParallelogramHit()
     }
 })
+document.getElementById('parallelogramInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'Enter'){
+        enterParallelogramHit()
+    }
+})
 
 //---------------------------------rhombus calculate------------------------------------//
 
@@ -106,6 +121,11 @@ function enterRhombusHit(){
 document.getElementById('rhombusBtn').addEventListener('click', enterRhombusHit)
 
 document.getElementById('rhombusInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'Enter'){
+        enterRhombusHit()
+    }
+})
+document.getElementById('rhombusInputBase').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterRhombusHit()
     }
@@ -136,6 +156,11 @@ document.getElementById('pentagonInputHight').addEventListener('keyup', function
         enterPentagonHit()
     }
 })
+document.getElementById('pentagonInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'Enter'){
+        enterPentagonHit()
+    }
+})
 
 //---------------------------------ellipse calculate------------------------------------//
 
@@ -156,6 +181,11 @@ function enterEllipseHit(){
 document.getElementById("ellipseBtn").addEventListener('click', enterEllipseHit)
 
 document.getElementById('ellipseInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'Enter'){
+        enterEllipseHit()
+    }
+})
+document.getElementById('ellipseInputBase').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterEllipseHit()
     }
