@@ -29,7 +29,9 @@ function enterTryangleHit(){
 }
 document.getElementById("triangleBtn").addEventListener('click', enterTryangleHit)
 
-document.getElementById('triangleInputHight').addEventListener('keyup', function(e){
+//press enter to submit
+
+document.getElementById("triangleInputHight").addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterTryangleHit()
     }
@@ -37,6 +39,19 @@ document.getElementById('triangleInputHight').addEventListener('keyup', function
 document.getElementById('triangleInputBase').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterTryangleHit()
+    }
+})
+
+//press arrow to move coursore
+
+document.getElementById('triangleInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowRight'){
+        document.getElementById('triangleInputHight').focus()
+    }
+})
+document.getElementById('triangleInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowLeft'){
+        document.getElementById('triangleInputBase').focus()
     }
 })
 
@@ -59,6 +74,8 @@ function enterRectangleHit(){
 
 document.getElementById('rectangleBtn').addEventListener('click', enterRectangleHit)
 
+//press enter to submit
+
 document.getElementById('rectangleInputHight').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterRectangleHit()
@@ -67,6 +84,19 @@ document.getElementById('rectangleInputHight').addEventListener('keyup', functio
 document.getElementById('rectangleInputWidth').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterRectangleHit()
+    }
+})
+
+//press arrow to move coursor
+
+document.getElementById('rectangleInputWidth').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowRight'){
+        document.getElementById('rectangleInputHight').focus()
+    }
+})
+document.getElementById('rectangleInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowLeft'){
+        document.getElementById('rectangleInputWidth').focus()
     }
 })
 
@@ -90,6 +120,8 @@ function enterParallelogramHit(){
 }
 document.getElementById("parallelogramBtn").addEventListener('click', enterParallelogramHit)
 
+//press enter to submit
+
 document.getElementById('parallelogramInputHight').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterParallelogramHit()
@@ -98,6 +130,20 @@ document.getElementById('parallelogramInputHight').addEventListener('keyup', fun
 document.getElementById('parallelogramInputBase').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterParallelogramHit()
+    }
+})
+
+//press arrow to move coursor
+
+document.getElementById('parallelogramInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowRight'){
+        document.getElementById('parallelogramInputHight').focus()
+    }
+})
+
+document.getElementById('parallelogramInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowLeft'){
+        document.getElementById('parallelogramInputBase').focus()
     }
 })
 
@@ -120,6 +166,8 @@ function enterRhombusHit(){
 }
 document.getElementById('rhombusBtn').addEventListener('click', enterRhombusHit)
 
+//press enter to submit
+
 document.getElementById('rhombusInputHight').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterRhombusHit()
@@ -128,6 +176,20 @@ document.getElementById('rhombusInputHight').addEventListener('keyup', function(
 document.getElementById('rhombusInputBase').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterRhombusHit()
+    }
+})
+
+//press arrow to move coursor
+
+document.getElementById('rhombusInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowRight'){
+        document.getElementById('rhombusInputHight').focus()
+    }
+})
+
+document.getElementById('rhombusInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowLeft'){
+        document.getElementById('rhombusInputBase').focus()
     }
 })
 
@@ -151,6 +213,8 @@ function enterPentagonHit(){
 }
 document.getElementById("pentagonBtn").addEventListener('click', enterPentagonHit)
 
+//press enter to submit
+
 document.getElementById('pentagonInputHight').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterPentagonHit()
@@ -159,6 +223,20 @@ document.getElementById('pentagonInputHight').addEventListener('keyup', function
 document.getElementById('pentagonInputBase').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterPentagonHit()
+    }
+})
+
+//press arrow to move coursor
+
+document.getElementById('pentagonInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowRight'){
+        document.getElementById('pentagonInputHight').focus()
+    }
+})
+
+document.getElementById('pentagonInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowLeft'){
+        document.getElementById('pentagonInputBase').focus()
     }
 })
 
@@ -180,6 +258,8 @@ function enterEllipseHit(){
 }
 document.getElementById("ellipseBtn").addEventListener('click', enterEllipseHit)
 
+//press enter to submit
+
 document.getElementById('ellipseInputHight').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
         enterEllipseHit()
@@ -187,7 +267,21 @@ document.getElementById('ellipseInputHight').addEventListener('keyup', function(
 })
 document.getElementById('ellipseInputBase').addEventListener('keyup', function(e){
     if(e.key === 'Enter'){
-        enterEllipseHit()
+        enterEllipseHit() 
+    }
+})
+
+//press arrow to move coursor
+
+document.getElementById('ellipseInputBase').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowRight'){
+        document.getElementById('ellipseInputHight').focus()
+    }
+})
+
+document.getElementById('ellipseInputHight').addEventListener('keyup', function(e){
+    if(e.key === 'ArrowLeft'){
+        document.getElementById('ellipseInputBase').focus()
     }
 })
 
